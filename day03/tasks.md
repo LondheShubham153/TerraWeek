@@ -14,6 +14,6 @@ Add lifecycle management configurations to the configuration file to control the
 
 Attach code snippets and steps wherever necessary and post your learnings on LinkedIn
 Feel Free to reach out to any of the TWS Community Builders / Leaders
-Watch this 👉 https://youtu.be/kqJIKjkJ1Lo
+Watch this 👉 https://youtu.be/VyB_vETjvT0
 
 # Happy Learning🎉🚀
