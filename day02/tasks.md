@@ -1,4 +1,4 @@
-# TerraWeek Day 1
+# TerraWeek Day 2
 
 ## Task 1: Familiarize yourself with HCL syntax used in Terraform
 - Learn about HCL blocks, parameters, and arguments
