@@ -20,10 +20,9 @@ Terraform is an open-source tool by HashiCorp that lets you define and provision
 
 Help us build a valuable resource hub by contributing your Terraform guides, examples, or resources through pull requests.
 
-
-![Terraform](assets/Terraform.png) ![AWS](assets/AWS.png) ![Azure](assets/Azure.png) ![GCP](assets/GCP.png) ![Docker](assets/Docker.png)
-
-
+<p align="center">
+  <img align="center" src="https://github.com/LondheShubham153/TerraWeek/blob/main/assets/Terraform_background.jpg" width="800">
+</p>
 
 ## Let's Get Started!
 
