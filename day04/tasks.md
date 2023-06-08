@@ -22,7 +22,7 @@ Attach code snippets and steps wherever necessary and post your learnings on Lin
 
 Feel Free to reach out to any of the TWS Community Builders / Leaders
 
-Watch this 👉 https://youtu.be/kqJIKjkJ1Lo && https://youtu.be/VyB_vETjvT0 
+Watch these videos 👉 [https://youtu.be/kqJIKjkJ1Lo](https://youtu.be/kqJIKjkJ1Lo) && [https://youtu.be/VyB_vETjvT0 ](https://youtu.be/2ZwkX5Kl7vs)
 
 Happy Learning 
 
