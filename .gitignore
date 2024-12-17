@@ -1,0 +1,33 @@
+# Ignore Terraform state and backup files
+*.tfstate*
+*.tfvars
+*.tfvars.json
+*.plan
+
+# Ignore .terraform directory (where provider plugins are stored)
+.terraform/
+
+# Ignore sensitive files
+*.pub
+*.key
+*.pem
+*.p12
+config.json
+secrets.txt
+
+# Ignore environment configuration files
+.env
+.env.local
+
+# Ignore IDE/editor-specific files
+.idea/
+.vscode/
+
+# Ignore backup files
+*.backup
+*.lock.hcl
+
+# Ignore large Terraform provider files (optional if .terraform/ is ignored)
+# This may be unnecessary unless you want more specificity.
+# Terraform-backend/.terraform/providers/...
+# Terraform-resources/.terraform/providers/...
