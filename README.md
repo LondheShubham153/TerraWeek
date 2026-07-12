@@ -19,15 +19,15 @@ Everything here is refreshed for **2026** using the **latest Terraform (v1.15.x)
 
 | Day | Date | Topic |
 |-----|------|-------|
-| [Day 1](./day01/tasks.md) | Sun, 12 Jul | Introduction to IaC & Terraform Basics |
-| [Day 2](./day02/tasks.md) | Mon, 13 Jul | HCL Deep Dive — Variables, Types & Expressions |
-| [Day 3](./day03/tasks.md) | Tue, 14 Jul | Providers, Resources & Your First Cloud Infra |
-| [Day 4](./day04/tasks.md) | Wed, 15 Jul | Terraform State & Remote Backends (Native Locking) |
-| [Day 5](./day05/tasks.md) | Thu, 16 Jul | Modules — Reusable, Composable Infrastructure |
-| [Day 6](./day06/tasks.md) | Fri, 17 Jul | Advanced Terraform + Capstone Project |
-| [Day 7](./day07/tasks.md) | Sat, 18 Jul | 🏁 Complete & Submit the Challenge |
+| [Day 1](./day01/README.md) | Sun, 12 Jul | Introduction to IaC & Terraform Basics |
+| [Day 2](./day02/README.md) | Mon, 13 Jul | HCL Deep Dive — Variables, Types & Expressions |
+| [Day 3](./day03/README.md) | Tue, 14 Jul | Providers, Resources & Your First Cloud Infra |
+| [Day 4](./day04/README.md) | Wed, 15 Jul | Terraform State & Remote Backends (Native Locking) |
+| [Day 5](./day05/README.md) | Thu, 16 Jul | Modules — Reusable, Composable Infrastructure |
+| [Day 6](./day06/README.md) | Fri, 17 Jul | Advanced Terraform + Capstone Project |
+| [Day 7](./day07/README.md) | Sat, 18 Jul | 🏁 Complete & Submit the Challenge |
 
-> 📮 **Submission form opens 18th July 2026:** **https://forms.gle/h5VmoLGbzWPZjPtf6** (see [Day 7](./day07/tasks.md) for the full checklist)
+> 📮 **Submission form opens 18th July 2026:** **https://forms.gle/h5VmoLGbzWPZjPtf6** (see [Day 7](./day07/README.md) for the full checklist)
 
 ---
 
@@ -68,14 +68,14 @@ This challenge pairs perfectly with Shubham's **"Terraform In One Shot"** master
 ## 📢 How to Participate
 
 1. **Fork** this repository and clone it.
-2. Each day, open that day's `tasks.md`, complete the tasks, and commit your code + notes to **your own repo**.
+2. Each day, open that day's `README.md`, complete the tasks, and commit your code + notes to **your own repo**.
 3. Write a short **blog / LinkedIn / X post** documenting what you learned (screenshots, code snippets, `terraform plan` output).
 4. Use these hashtags on every post:
 
    > **#TrainWithShubham #TerraWeekChallenge**
 
 5. Tag **[@Shubham Londhe](https://www.linkedin.com/in/shubhamlondhe1996/)** and share it with your network.
-6. On **Day 7 (18th July)**, submit your repo + posts via the [**submission form**](https://forms.gle/h5VmoLGbzWPZjPtf6) — see [Day 7](./day07/tasks.md) for the checklist.
+6. On **Day 7 (18th July)**, submit your repo + posts via the [**submission form**](https://forms.gle/h5VmoLGbzWPZjPtf6) — see [Day 7](./day07/README.md) for the checklist.
 
 ---
 
