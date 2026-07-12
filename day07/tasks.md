@@ -1,37 +1,66 @@
-# TerraWeek Day 7 - Advanced Terraform Topics
+# 🏁 TerraWeek Day 7 — Complete & Submit the Challenge
 
-Welcome to the advanced TerraWeek challenge! In this phase, we will dive into advanced topics that will enhance your Terraform skills. Let's explore exciting concepts such as workspaces, remote execution, collaboration, best practices, and additional features to take your Terraform knowledge to the next level.
+**Date:** Saturday, 18th July 2026 — 🎉 **Submission Day!**
 
-## Task 1: Workspaces, Remote Execution, and Collaboration
+You made it! 🥳 Over the last 6 days you went from `terraform init` to building real, modern infrastructure with modules, remote state, testing, and CI/CD. Today there's **no new Terraform to learn** — it's time to **package your work and submit it** for prizes.
 
-✨ Objective: Gain proficiency in using workspaces, remote execution, and collaboration features in Terraform.
+---
 
-📚 Steps:
-- Dive into the concepts of Terraform workspaces and understand how they can be utilized to manage multiple environments.
-- Explore remote execution options such as using remote backends (e.g., AWS S3, Azure Storage Account, or HashiCorp Consul) and understand the benefits they offer.
-- Learn about collaboration tools like HashiCorp Terraform Cloud or Terraform Enterprise and how they facilitate team collaboration and version control.
+## ✅ Pre-Submission Checklist
 
-## Task 2: Terraform Best Practices
+Go through this before you fill the form. Tick every box:
 
-✨ Objective: Learn and implement best practices for organizing your Terraform code, version control, and CI/CD integration.
+### 📂 Your GitHub Repo
+- [ ] A **public GitHub repository** for your TerraWeek work.
+- [ ] Code for **all 6 days** (Day 1 → Day 6), organized in folders.
+- [ ] Your **Capstone Project** (Day 6) with its `README.md` + architecture notes.
+- [ ] A clear **top-level `README.md`** describing what you built and how to run it.
+- [ ] **No secrets or state committed** — check that `*.tfstate` and `*.tfvars` are git-ignored. 🔒
+- [ ] Everything you deployed has been **`terraform destroy`-ed** to avoid bills. 💸
 
-📚 Steps:
-- Familiarize yourself with Terraform best practices, including code organization, module usage, and naming conventions.
-- Explore version control systems (e.g., Git) and learn how to effectively manage your Terraform codebase.
-- Understand how to integrate Terraform with CI/CD pipelines and implement automated testing, validation, and deployment strategies.
+### 📝 Learn in Public (this is how winners are chosen!)
+- [ ] A **blog / LinkedIn / X post for each day** (or a consolidated series) documenting your learnings, screenshots, and challenges.
+- [ ] Every post uses the hashtags: **#TrainWithShubham #TerraWeekChallenge**
+- [ ] You **tagged [@Shubham Londhe](https://www.linkedin.com/in/shubhamlondhe1996/)** and shared with your network.
+- [ ] (Brownie points 🍫) You added **extra learnings** beyond the given tasks.
 
-## Task 3: Exploring Additional Features
+---
 
-✨ Objective: Explore additional features available in the Terraform ecosystem, such as Terraform Cloud, Terraform Enterprise, or the Terraform Registry.
+## 📮 Submit the Challenge
 
-📚 Steps:
-- Dive deeper into Terraform Cloud or Terraform Enterprise and understand how they provide enhanced collaboration, infrastructure management, and workflow automation capabilities.
-- Discover the Terraform Registry and explore its vast collection of modules and providers to extend the functionality of your infrastructure code.
+**👉 Submission form:** **https://forms.gle/h5VmoLGbzWPZjPtf6**
 
-Remember to document your learnings, experiment with the concepts in practice, and ask questions during the debriefing sessions.
+> 🗓️ **The form opens on 18th July 2026.** If the link isn't accepting responses yet, check back on the 18th — submissions are only counted once it's open.
 
-📝 Enjoy delving into advanced Terraform topics and unlocking the full potential of infrastructure as code!
+### What you'll need handy for the form
+1. Your **name & contact details** (email / LinkedIn).
+2. The **URL of your public GitHub repo**.
+3. **Links to your daily posts** (LinkedIn / X / blog / Discord).
+4. A short note on **what you built** and any **bonus learnings** you added.
 
-> Note: Some advanced features may require additional setup or accounts. Refer to the official documentation for detailed instructions.
+---
 
-### Happy Terraforming! 🌍💻
+## 🏆 How Winners Are Chosen (recap)
+
+- **Learn in Public** — consistent daily posts across LinkedIn / X / Discord / Blogs **+** full challenge completion.
+- **Consistent upskilling & complete Terraform coverage** — brownie points for going beyond the tasks.
+- A well-organized **GitHub repo** linked in your blog / LinkedIn post.
+- Engagement — commenting on / tagging the announcement post and sharing with your network.
+
+### 🎁 Rewards
+- **Top 3 Winners** → [DevOps: Zero To Hero (AI Powered) Cohort](https://trainwithshubham.ai) — **FREE**.
+- **Everyone who completes** → **Python For DevOps (AI Powered) Cohort** access.
+
+---
+
+## 🚀 What's Next?
+
+- Keep the momentum: turn your capstone into a portfolio piece and add it to your resume.
+- Explore what you didn't get to: **HCP Terraform**, **Terragrunt**, **policy-as-code (OPA/Sentinel)**, multi-cloud.
+- Help the next batch — **contribute** a fix or a bonus example back to this repo via a PR. ❤️
+
+---
+
+💬 Questions about submission? Ask in the [Discord](https://discord.gg/hs3Pmc5F) / [Telegram](https://t.me/trainwithshubham) community.
+
+### 🎉 Congratulations on completing the TWS TerraWeek Challenge 2026 — now go submit and claim your reward! 🌍💻

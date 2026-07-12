@@ -7,8 +7,6 @@ terraform {
       version = "~> 6.0"
     }
   }
-  # NOTE: This bootstrap config uses LOCAL state on purpose — it creates the
-  # very bucket that other configs will use as their remote backend.
 }
 
 provider "aws" {
@@ -18,7 +16,7 @@ provider "aws" {
     tags = {
       Project   = "terraweek-2026"
       ManagedBy = "terraform"
-      Purpose   = "tf-state-backend"
+      Day       = "03"
     }
   }
 }

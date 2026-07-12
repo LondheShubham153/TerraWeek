@@ -1,0 +1,18 @@
+# Local .terraform directories
+**/.terraform/*
+
+# State files — never commit these
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Generated during apply
+greeting.txt
+
+# Variable files that may contain secrets
+*.tfvars
+*.tfvars.json
+!example.tfvars
