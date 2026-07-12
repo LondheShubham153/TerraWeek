@@ -1,0 +1,24 @@
+# Terraform working directories
+**/.terraform/*
+**/.terraform.tfstate.lock.info
+
+# State files — NEVER commit these (may contain secrets)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files that may contain secrets (keep the .example ones)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# CLI config & plan outputs
+.terraformrc
+terraform.rc
+*.tfplan
+
+# Generated files from examples
+**/greeting.txt

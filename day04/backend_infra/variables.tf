@@ -1,12 +1,11 @@
-# Backend Variables
-variable "state_bucket_name" {
-    default = "terraweek-demo-state-bucket"
-}
-
-variable "state_table_name" {
-    default = "terraweek-demo-state-table"
-}
-
 variable "aws_region" {
-    default = "us-east-1"
+  description = "AWS region for the state bucket."
+  type        = string
+  default     = "us-east-1"
+}
+
+variable "state_bucket_name" {
+  description = "Globally-unique name for the S3 state bucket. CHANGE THIS."
+  type        = string
+  default     = "terraweek-2026-state-bucket-changeme"
 }
