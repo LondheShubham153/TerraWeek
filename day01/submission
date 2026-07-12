@@ -1,0 +1,91 @@
+1.What is Terraform and how can it help you manage infrastructure as code?
+
+Terraform, a widely used IaC tool developed by HashiCorp
+is an open-source infrastructure as code software tool. 3.It allows users to define infrastructure resources, such as virtual machines, networks, storage, and more🌟
+Uses HCL as declarative configuration language. 5.With Terraform, infrastructure can be managed across multiple cloud providers, including AWS, Azure, Google Cloud Platform, and others, as well as on-premises environments
+
+2.Why do we need Terraform and how does it simplify infrastructure provisioning?
+
+Managing infrastructure manually or through scripts can become complex, error-prone, and hard to scale. Terraform addresses these challenges by offering a consistent, automated, and repeatable way to manage infrastructure as code. It ensures infrastructure is always in the desired state, reduces human error, and supports efficient collaboration.
+
+3.How can you install Terraform and set up the environment for AWS, Azure, or GCP?
+
+Download Terraform: Visit the official Terraform website: Install | Terraform | HashiCorp Developer and download the binary compatible with your operating system.For Linux:
+>>sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
+
+>>wget -O- https://apt.releases.hashicorp.com/gpg | \
+gpg --dearmor | \
+sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+
+
+
+>>gpg --no-default-keyring \
+--keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
+--fingerprint
+
+
+>>echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
+sudo tee /etc/apt/sources.list.d/hashicorp.list
+
+
+>>sudo apt update
+
+>>sudo apt-get install terraform
+
+>> terraform --version
+4.Explain the important terminologies of Terraform with the example at least (5 crucial terminologies).
+
+1.Provider
+Definition: Providers are plugins that interact with APIs of cloud platforms, SaaS providers, or other services to manage resources.
+Example:
+
+hcl
+Copy code
+provider "aws" {
+  region = "us-west-1"
+}
+Here, the AWS provider is configured to manage resources in the us-west-1 region.
+
+2.Resource
+Definition: A resource is a component of your infrastructure, such as an EC2 instance, S3 bucket, or Kubernetes cluster, managed by Terraform.
+Example:
+
+hcl
+Copy code
+resource "aws_instance" "example" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+}
+This creates an AWS EC2 instance with the specified AMI and instance type.
+
+3.Module
+Definition: A module is a container for multiple resources that are used together. Modules allow you to group and reuse configurations.
+Example:
+
+hcl
+Copy code
+module "vpc" {
+  source = "terraform-aws-modules/vpc/aws"
+  name   = "my-vpc"
+  cidr   = "10.0.0.0/16"
+}
+This example uses a prebuilt VPC module to create a Virtual Private Cloud.
+
+4.State
+Definition: Terraform uses a state file to keep track of the current state of infrastructure and the mapping between the configuration and the real-world resources.
+Example:
+After applying configurations, Terraform generates a terraform.tfstatefile to track resources.
+Commands liketerraform plan compare the current state with the desired configuration to determine changes.
+
+5.Plan and Apply
+Definition:
+Plan: Previews the changes that will be made to the infrastructure.
+Apply: Executes the plan to provision or update resources.
+Example:
+
+bash
+Copy code
+terraform plan
+terraform apply
+terraform plan shows changes like adding, modifying, or destroying resources, and terraform apply executes them.
