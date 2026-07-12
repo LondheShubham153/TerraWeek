@@ -1,0 +1,80 @@
+Q-1) What is Terraform and how can it help you manage infrastructure as code?
+Ans- Terraform, developed by HashiCorp, is an open-source Infrastructure as Code (IaC) tool. 
+It leverages a declarative language called HCL (HashiCorp Configuration Language) to define its resources. 
+If you prefer to add unnecessary complexity, you can also use JSON to define resources.
+
+If you go back two decades, everyone uses those physical servers (produced by IBM, HP, and Cisco) which took weeks to setup correctly before we could run the applications on them.
+Then came the time of virtualization, sharing computer resources across multiple OS installations using Huper V Virtualization technologies such as VMware.
+
+Following that, AWS emerged and revolutionized the computing landscape, ushering in a new era of streamlined cloud computing. 
+Subsequently, other prominent tech giants like Microsoft and Google introduced their own cloud offerings, namely Azure and Google Cloud Platform, respectively
+
+Within the cloud environment, it's effortless to deploy a server within minutes with a few simple clicks. 
+Initially, creating and handling a handful of servers was a straightforward task. 
+However, as the number of servers and their associated configurations increased, manual tracking became a difficult challenge.
+
+Terraform can manage infrastructure on multiple cloud platforms.
+The human-readable configuration language helps you write infrastructure code quickly.
+Terraform's state allows you to track resource changes throughout your deployments.
+You can commit your configurations to version control to safely collaborate on infrastructure.
+
+
+Q-2) Why do we need Terraform and how does it simplify infrastructure provisioning?
+Ans- Below are some challenges before IAC
+1) Reproducibility and Disaster Recovery
+2) Limited Collaboration and Managing Operations
+3) Lack of Scalability and flexibility
+4) Inconsistency and Configuration Drift
+5) Lack of Visibility and Auditability
+6) Manual and Error-prone Process
+
+Introducing IAC - Infrastructure as Code
+Infrastructure as Code(IAC) is a combination of standards, practices, tools, and processes to provision, configure, and manage computer infrastructure using code and other machine-readable files.
+
+IAC solved all the above-mentioned challenges and added a ton of additional benefits.
+Improved visibility, audibility, and security.
+Scalability and Flexibility
+Reusability
+Faster Disaster Recovery
+Improved Efficiency
+Increased reliability
+Improved Collaboration and agility
+
+Q-3) How can you install Terraform and set up the environment for AWS, Azure, or GCP?
+Ans- To install terraform as per you system configuration visit https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
+For Linux installation run these commands on the terminal
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+
+Q-4) Explain the important terminologies of Terraform with the example at least (5 crucial terminologies).
+Ans- Certainly! Here are five crucial terminologies in Terraform along with examples to help illustrate their significance:
+1) Provider: A provider is a plugin that interacts with a specific infrastructure platform (e.g., AWS, Azure, or Google Cloud Platform) and exposes the resources and services provided by that platform to Terraform. It enables Terraform to manage resources on the target infrastructure. For example, the "aws" provider in Terraform allows you to provision and manage resources in Amazon Web Services (AWS).
+
+2)Resource: A resource represents a tangible infrastructure component that you want to manage with Terraform. It could be a virtual machine, a network interface, a database instance, or any other entity provided by the infrastructure platform. For instance, an example of a resource in Terraform is an AWS EC2 instance:
+resource "aws_instance" "example" {
+  ami           = "ami-0c94855ba95c71c99"
+  instance_type = "t2.micro"
+}
+
+
+3) Module: A module is a self-contained and reusable Terraform configuration that encapsulates a set of resources and their dependencies. Modules promote code organization, reusability, and modular design principles. They allow you to encapsulate complex configurations and manage them independently. For example, you might create a module that provisions a complete web application stack, including compute instances, load balancers, and databases, which can be reused across multiple environments or projects.
+
+4)Variable: Variables in Terraform allow you to parameterize your configurations, making them more flexible and reusable. They act as placeholders for values that can be provided externally when running Terraform commands. Variables can be defined at different levels, such as in the root module or within a module. Here's an example of defining and using a variable in Terraform:
+variable "aws_region" {
+  description = "The AWS region where resources will be provisioned"
+  default     = "us-west-2"
+}
+
+resource "aws_instance" "example" {
+  ami           = "ami-0c94855ba95c71c99"
+  instance_type = "t2.micro"
+  region        = var.aws_region
+}
+
+5)Output: Outputs in Terraform allow you to extract and display information from your infrastructure after it has been provisioned. They provide a way to expose values of interest, such as IP addresses, resource identifiers, or connection details, for reference or further processing. Here's an example of defining an output in Terraform:
+output "instance_ip" {
+  description = "The public IP address of the instance"
+  value       = aws_instance.example.public_ip
+}
