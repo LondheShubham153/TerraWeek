@@ -1,14 +1,23 @@
 output "container_name" {
-  description = "Full name of the running container."
-  value       = docker_container.web.name
+  value = docker_container.web.name
 }
 
-output "access_url" {
-  description = "URL to reach the Nginx welcome page."
-  value       = format("http://localhost:%d", var.external_port)
+output "container_url" {
+  value = "http://localhost:${var.external_port}"
 }
 
-output "image" {
-  description = "The image the container is running."
-  value       = docker_image.nginx.name
+output "name_prefix" {
+  value = local.name_prefix
+}
+
+output "common_labels" {
+  value = local.common_labels
+}
+
+output "upper_names" {
+  value = local.upper_names
+}
+
+output "effective_memory_mb" {
+  value = local.effective_memory_mb
 }
