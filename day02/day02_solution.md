@@ -48,7 +48,7 @@ variable "external_port" {
 
 Tried the built-in functions live in `terraform console`:
 
-![terraform console functions](assets/tf_console_all.png)
+![terraform console functions](assets/tf_console_all%20.png)
 
 `upper()` uppercases a string, `merge()` combines two maps, `join()` builds a hyphen-separated string from a list, `length()` counts list items, and `lookup()` pulls a value out of a map by key with a default fallback.
 
