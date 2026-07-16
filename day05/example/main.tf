@@ -39,7 +39,7 @@ locals {
 
 # 1) A single instance — pass inputs, read outputs.
 module "web_server" {
-  source                 = "git::https://github.com/saadhussain07/terraform-ec2-module.git?ref=v1.0.0"
+  source                 = "git::https://github.com/saadhussain07/terraform-ec2-module.git?ref=v1.1.0"
   name                   = "web"
   instance_type          = "t3.micro" # t2.micro isn't free-tier-eligible on newer AWS accounts
   environment            = "dev"
