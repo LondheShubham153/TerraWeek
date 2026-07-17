@@ -1,4 +1,5 @@
 name: Capstone CI
+# AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and ALLOWED_SSH_CIDR configured as repo secrets.
 
 on:
   push:
