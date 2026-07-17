@@ -226,7 +226,6 @@ Two jobs: `Validate & Test` (fmt, validate, test, Trivy — zero AWS credentials
 `ALLOWED_SSH_CIDR` repo secrets, runs a real `terraform plan` against the live S3 backend).
 
 ![Capstone CI running both jobs](assets/capstone_ci_running.png)
-![Security scan step passing in CI](assets/pipeline_trivy_scan.png)
 ![Real terraform plan inside CI](assets/tf_plan_in_ci.png)
 
 The CI plan matched the local plan exactly — `15 to add, 0 to change, 0 to destroy` in both
