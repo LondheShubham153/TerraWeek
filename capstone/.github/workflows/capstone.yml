@@ -1,0 +1,67 @@
+name: Capstone CI
+
+on:
+  push:
+    paths:
+      - 'capstone/**'
+
+jobs:
+  validate-and-test:
+    name: Validate & Test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./capstone
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Format Check
+        run: terraform fmt -check -recursive
+
+      - name: Terraform Init (no backend — validate/test don't need real state)
+        run: terraform init -backend=false
+
+      - name: Terraform Validate
+        run: terraform validate
+
+      - name: Terraform Test (mocked provider — no AWS credentials required)
+        run: terraform test
+
+      - name: Security Scan (Trivy)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: config
+          scan-ref: ./capstone
+
+  plan:
+    name: Plan Against Real AWS
+    runs-on: ubuntu-latest
+    needs: validate-and-test
+    defaults:
+      run:
+        working-directory: ./capstone
+    # NOTE: this job needs AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY configured as
+    # repo secrets (Settings -> Secrets and variables -> Actions) before it can succeed,
+    # since it initializes the real S3 backend and calls the AWS API for the AMI lookup.
+    # Unlike Day 6's example, this project touches real infrastructure, so real credentials
+    # are unavoidable for this step. Until secrets are added, expect this job to fail at
+    # `terraform init` — that's expected, not a bug.
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hashicorp/setup-terraform@v3
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan -var="allowed_ssh_cidr=${{ secrets.ALLOWED_SSH_CIDR }}"
