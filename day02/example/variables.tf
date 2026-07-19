@@ -1,4 +1,5 @@
 # --- Primitive types ---
+
 variable "container_name" {
   description = "Name of the Docker container."
   type        = string
@@ -27,7 +28,17 @@ variable "environment" {
   }
 }
 
-# --- Collection type ---
+# --- Sensitive value ---
+
+variable "registry_token" {
+  description = "Example sensitive value — not used by Docker Hub's public pulls, shown for the pattern."
+  type        = string
+  default     = "dummy-token"
+  sensitive   = true
+}
+
+# --- Collection types ---
+
 variable "image_tag" {
   description = "Nginx image tag to pull."
   type        = string
@@ -39,5 +50,27 @@ variable "extra_labels" {
   type        = map(string)
   default = {
     team = "trainwithshubham"
+  }
+}
+
+variable "names" {
+  description = "List of names used to demonstrate a for expression."
+  type        = list(string)
+  default     = ["shubham", "terraweek", "tws"]
+}
+
+# --- Structural type, with an optional() attribute (bonus) ---
+
+variable "resource_profile" {
+  description = "Resource sizing profile. 'notes' is optional and defaults to null if not set."
+  type = object({
+    cpu_shares = number
+    memory_mb  = number
+    notes      = optional(string)
+  })
+  default = {
+    cpu_shares = 512
+    memory_mb  = 256
+    notes      = null
   }
 }
