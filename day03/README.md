@@ -1,6 +1,6 @@
 # ☁️ TerraWeek Day 3 — Providers, Resources & Your First Cloud Infra
 
-**Date:** Tuesday, 14th July 2026
+**Date:** Tuesday, 13th October 2026
 
 Time to touch **real cloud infrastructure**! Today you'll configure a **provider**, use **data sources** and **meta-arguments** (`for_each`, `count`, `depends_on`, `lifecycle`), and provision a small network + compute stack on the cloud of your choice. 🏗️
 
@@ -115,9 +115,23 @@ terraform destroy   # type: yes  — avoid surprise bills!
 
 ---
 
-## 📤 What to Submit
-- Blog / LinkedIn / X post: your `terraform plan`/`apply` output, the AWS console showing your resources, and the diff when you changed something.
-- Push to your GitHub repo. Tag **#TrainWithShubham #TerraWeekChallenge**.
+## 🗂️ Example Code from the Repos
+
+Study these real, up-to-date examples (Terraform ≥ 1.5, AWS provider `~> 6.0`) alongside today's tasks — read them, run them, then modify them:
+
+| Example | What it shows |
+|---|---|
+| [`ec2.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/ec2.tf) · [`s3.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/s3.tf) · [`dynamodb.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/dynamodb.tf) | Real AWS resources: EC2, S3, DynamoDB |
+| [`examples/for_each.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/for_each.tf) | `for_each` over maps/sets and `dynamic` blocks |
+| [`examples/lifecycle.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/lifecycle.tf) | The four `lifecycle` patterns |
+
+> 🧭 More Terraform repos: [github.com/LondheShubham153?q=terraform](https://github.com/LondheShubham153?tab=repositories&q=terraform)
+
+---
+
+## 📤 Wrap Up
+- Keep notes on: your `terraform plan`/`apply` output, the AWS console showing your resources, and the diff when you changed something.
+- Push to your GitHub repo. (Optional) Share with **#TrainWithShubham #TerraWeekChallenge**.
 
 ---
 

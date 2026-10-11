@@ -1,6 +1,6 @@
 # 📦 TerraWeek Day 5 — Modules: Reusable, Composable Infrastructure
 
-**Date:** Thursday, 16th July 2026
+**Date:** Thursday, 15th October 2026
 
 Copy-pasting `.tf` blocks doesn't scale. **Modules** let you package infrastructure once and reuse it everywhere — across environments, teams, and projects. Today you'll **write your own module**, **consume registry modules**, and learn **versioning**. ♻️
 
@@ -108,9 +108,23 @@ Explain why **pinning matters** (reproducible builds, no surprise breaking chang
 
 ---
 
-## 📤 What to Submit
-- Blog / LinkedIn / X post: your module structure, the root config calling it, and `terraform plan` showing multiple instances via `for_each`.
-- Push to your GitHub repo. Tag **#TrainWithShubham #TerraWeekChallenge**.
+## 🗂️ Example Code from the Repos
+
+Study these real, up-to-date examples (Terraform ≥ 1.5, AWS provider `~> 6.0`) alongside today's tasks — read them, run them, then modify them:
+
+| Example | What it shows |
+|---|---|
+| [`aws_module_project/`](https://github.com/LondheShubham153/terraform-for-devops/tree/main/aws_module_project) | One reusable module instantiated for dev / stg / prd |
+| [`my_app_infra_module/`](https://github.com/LondheShubham153/terraform-for-devops/tree/main/aws_module_project/my_app_infra_module) | Module with variables and outputs (EC2 + S3 + DynamoDB) |
+| [`terraform-aws-multi-env/modules/`](https://github.com/LondheShubham153/terraform-aws-multi-env/tree/main/modules) | Separate `ec2`, `s3` and `dynamodb` modules, each with `variables.tf` / `outputs.tf` |
+
+> 🧭 More Terraform repos: [github.com/LondheShubham153?q=terraform](https://github.com/LondheShubham153?tab=repositories&q=terraform)
+
+---
+
+## 📤 Wrap Up
+- Keep notes on: your module structure, the root config calling it, and `terraform plan` showing multiple instances via `for_each`.
+- Push to your GitHub repo. (Optional) Share with **#TrainWithShubham #TerraWeekChallenge**.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🚀 TerraWeek Day 6 — Advanced Terraform + Capstone Project
 
-**Date:** Friday, 17th July 2026
+**Date:** Friday, 16th October 2026
 
 The finale! 🎉 Today you'll level up with **workspaces**, the native **`terraform test`** framework, **security scanning**, **CI/CD**, and **best practices** — then tie everything together in a **Capstone Project** you can show off in interviews.
 
@@ -120,12 +120,27 @@ Two production-grade blueprints to study and adapt — don't just copy, **unders
 
 ---
 
-## 📤 What to Submit (Final!)
-- A blog / LinkedIn / X post with your **capstone architecture**, code repo link, and demo screenshots.
-- Your complete **GitHub repo** for the whole week.
-- Tag **#TrainWithShubham #TerraWeekChallenge**, tag **[@Shubham Londhe](https://www.linkedin.com/in/shubhamlondhe1996/)**, and share with your network.
+## 🗂️ Example Code from the Repos
 
-> 🎓 Completed all 6 days + learned in public? You've earned your **Python For DevOps [AI Powered] Cohort** access — and a shot at the **Top 3** prize! 🏆
+Study these real, up-to-date examples (Terraform ≥ 1.5, AWS provider `~> 6.0`) alongside today's tasks — read them, run them, then modify them:
+
+| Example | What it shows |
+|---|---|
+| [`examples/terraform_test/`](https://github.com/LondheShubham153/terraform-for-devops/tree/main/examples/terraform_test) | Native `terraform test` with a `.tftest.hcl` file |
+| [`terraform-aws-multi-env`](https://github.com/LondheShubham153/terraform-aws-multi-env) | Workspaces (dev / prod) driving per-environment config + modules |
+| [`eks/`](https://github.com/LondheShubham153/terraform-for-devops/tree/main/eks) | Production EKS via registry modules (VPC, EKS) — capstone inspiration |
+| [`aws-devops`](https://github.com/LondheShubham153/aws-devops/tree/main/terraform) | CI/CD on AWS (CodePipeline, ECS Fargate, ECR) in Terraform. ⚠️ Pins AWS provider `~> 5.0` — upgrading it to 6.x makes a good stretch task |
+
+> 🧭 More Terraform repos: [github.com/LondheShubham153?q=terraform](https://github.com/LondheShubham153?tab=repositories&q=terraform)
+
+---
+
+## 📤 Wrap Up
+- Document your **capstone architecture** with a README and demo screenshots.
+- Push your complete **GitHub repo** for the whole week.
+- (Optional) Share it with **#TrainWithShubham #TerraWeekChallenge** and tag **[@Shubham Londhe](https://www.linkedin.com/in/shubhamlondhe1996/)**.
+
+> 🎓 Finished all 6 days? Head to [Day 7](../day07/README.md) for a final review checklist.
 
 ---
 

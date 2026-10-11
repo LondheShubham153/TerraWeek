@@ -1,6 +1,6 @@
 # 🌱 TerraWeek Day 1 — Introduction to IaC & Terraform Basics
 
-**Date:** Sunday, 12th July 2026
+**Date:** Sunday, 11th October 2026
 
 Welcome to **Day 1** of the TerraWeek Challenge! Today is all about **foundations** — understanding *why* Infrastructure as Code exists, installing the **latest Terraform (v1.15.x)**, and running your very first `terraform apply`. 🚀
 
@@ -77,10 +77,24 @@ terraform destroy   # clean up (type: yes)
 
 ---
 
-## 📤 What to Submit
-- A blog / LinkedIn / X post with your learnings + screenshots of `terraform version` and a successful `apply`/`destroy`.
+## 🗂️ Example Code from the Repos
+
+Study these real, up-to-date examples (Terraform ≥ 1.5, AWS provider `~> 6.0`) alongside today's tasks — read them, run them, then modify them:
+
+| Example | What it shows |
+|---|---|
+| [`terraform.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/terraform.tf) | `required_version` + pinned AWS provider — what a modern `terraform {}` block looks like |
+| [`.terraform-version`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/.terraform-version) | Pinning the Terraform CLI version (works with `tfenv`) |
+| [`ec2.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/ec2.tf) | A first real AWS resource: key pair, security group and EC2 instance |
+
+> 🧭 More Terraform repos: [github.com/LondheShubham153?q=terraform](https://github.com/LondheShubham153?tab=repositories&q=terraform)
+
+---
+
+## 📤 Wrap Up
+- Keep notes on your learnings + screenshots of `terraform version` and a successful `apply`/`destroy`.
 - Push your code to your own **GitHub repo**.
-- Tag **#TrainWithShubham #TerraWeekChallenge** and share with your network.
+- (Optional) Share your progress with **#TrainWithShubham #TerraWeekChallenge**.
 
 ---
 

@@ -1,6 +1,6 @@
 # 🗄️ TerraWeek Day 4 — State & Remote Backends (Native Locking)
 
-**Date:** Wednesday, 15th July 2026
+**Date:** Wednesday, 14th October 2026
 
 Terraform's **state** is the single most important concept for working on a **team**. Today you'll understand what state is, why it's sensitive, and how to store it **remotely and safely** — using the **modern S3 native state locking** (no DynamoDB needed anymore!). 🔐
 
@@ -105,9 +105,24 @@ cd ../backend_infra && terraform destroy   # empty the bucket first if versionin
 
 ---
 
-## 📤 What to Submit
-- Blog / LinkedIn / X post: your backend config, a screenshot of state in S3, and the lock file appearing during `apply`.
-- Push to your GitHub repo (**remember: never commit `.tfstate`!**). Tag **#TrainWithShubham #TerraWeekChallenge**.
+## 🗂️ Example Code from the Repos
+
+Study these real, up-to-date examples (Terraform ≥ 1.5, AWS provider `~> 6.0`) alongside today's tasks — read them, run them, then modify them:
+
+| Example | What it shows |
+|---|---|
+| [`examples/import.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/import.tf) | Bring existing infra under Terraform with `import` blocks |
+| [`examples/moved.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/moved.tf) | Refactor addresses without destroy/recreate |
+| [`examples/removed.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/removed.tf) | Stop managing a resource, optionally keeping it |
+| [`examples/check.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/check.tf) | Continuous health assertions with `check` blocks |
+
+> 🧭 More Terraform repos: [github.com/LondheShubham153?q=terraform](https://github.com/LondheShubham153?tab=repositories&q=terraform)
+
+---
+
+## 📤 Wrap Up
+- Keep notes on: your backend config, a screenshot of state in S3, and the lock file appearing during `apply`.
+- Push to your GitHub repo (**remember: never commit `.tfstate`!**). (Optional) Share with **#TrainWithShubham #TerraWeekChallenge**.
 
 ---
 

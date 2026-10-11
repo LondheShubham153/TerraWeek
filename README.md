@@ -5,9 +5,9 @@
 # 🔥 TWS TerraWeek Challenge 2026
 
 > **Are you ready to take the Terraform Challenge?**
-> Learn Terraform, build real Infrastructure as Code, and share it with the world. 🌍
+> Learn Terraform, build real Infrastructure as Code, and stay consistent every day. 🌍
 
-Welcome to the **TerraWeek Challenge** by **TrainWithShubham (TWS)** — a **6-day**, hands-on Terraform sprint that takes you from zero to building your own cloud infrastructure with Infrastructure as Code (IaC).
+Welcome to the **TerraWeek Challenge** by **TrainWithShubham (TWS)** — a **6-day**, hands-on Terraform sprint (plus a wrap-up day) that takes you from zero to building your own cloud infrastructure with Infrastructure as Code (IaC).
 
 Everything here is refreshed for **2026** using the **latest Terraform (v1.15.x)** and **latest provider versions** (AWS provider v6.x and friends). No stale syntax, no deprecated patterns — just modern, production-grade Terraform.
 
@@ -15,19 +15,17 @@ Everything here is refreshed for **2026** using the **latest Terraform (v1.15.x)
 
 ## 🗓️ Challenge Dates
 
-**12th July → 17th July 2026 (Sunday to Friday)**
+**11th October → 17th October 2026 (Sunday to Saturday)**
 
 | Day | Date | Topic |
 |-----|------|-------|
-| [Day 1](./day01/README.md) | Sun, 12 Jul | Introduction to IaC & Terraform Basics |
-| [Day 2](./day02/README.md) | Mon, 13 Jul | HCL Deep Dive — Variables, Types & Expressions |
-| [Day 3](./day03/README.md) | Tue, 14 Jul | Providers, Resources & Your First Cloud Infra |
-| [Day 4](./day04/README.md) | Wed, 15 Jul | Terraform State & Remote Backends (Native Locking) |
-| [Day 5](./day05/README.md) | Thu, 16 Jul | Modules — Reusable, Composable Infrastructure |
-| [Day 6](./day06/README.md) | Fri, 17 Jul | Advanced Terraform + Capstone Project |
-| [Day 7](./day07/README.md) | Sat, 18 Jul | 🏁 Complete & Submit the Challenge |
-
-> 📮 **Submission form opens 18th July 2026:** **https://forms.gle/h5VmoLGbzWPZjPtf6** (see [Day 7](./day07/README.md) for the full checklist)
+| [Day 1](./day01/README.md) | Sun, 11 Oct | Introduction to IaC & Terraform Basics |
+| [Day 2](./day02/README.md) | Mon, 12 Oct | HCL Deep Dive — Variables, Types & Expressions |
+| [Day 3](./day03/README.md) | Tue, 13 Oct | Providers, Resources & Your First Cloud Infra |
+| [Day 4](./day04/README.md) | Wed, 14 Oct | Terraform State & Remote Backends (Native Locking) |
+| [Day 5](./day05/README.md) | Thu, 15 Oct | Modules — Reusable, Composable Infrastructure |
+| [Day 6](./day06/README.md) | Fri, 16 Oct | Advanced Terraform + Capstone Project |
+| [Day 7](./day07/README.md) | Sat, 17 Oct | 🏁 Wrap Up & Review |
 
 ---
 
@@ -46,36 +44,19 @@ This challenge pairs perfectly with Shubham's **"Terraform In One Shot"** master
 
 - 🛠️ Solve a **daily Terraform challenge** with hands-on tasks and starter code.
 - ☁️ Build your **own project infrastructure** on the cloud of your choice — **AWS / Azure / GCP / Utho**.
-- 📢 **Learn in public** — post your daily progress and tag the community.
+- 📓 **Stay consistent** — this is a self-paced practice assignment: do a little each day and keep notes on what you learn.
+- 📢 *(Optional)* **Learn in public** — share your progress and tag the community.
 - 🚀 Finish the week with a **Capstone Project** you can show off in interviews.
 
 ---
 
-## 🏆 Prizes & Rewards
-
-**Top 3 Winners** get **[trainwithshubham.ai](https://trainwithshubham.ai) — DevOps: Zero To Hero [AI Powered] Cohort** access for **FREE**. 🎉
-
-**Everyone who completes the challenge** gets **Python For DevOps [AI Powered] Cohort** access.
-
-### 🥇 How Winners Are Chosen
-- **Learn in Public** — daily posts on LinkedIn / X / Discord / Blogs + full challenge completion.
-- **Consistent upskilling** & **complete Terraform coverage** (🍫 brownie points for adding new learnings beyond the tasks).
-- Create a **GitHub repo** for your work and link it in your blog / LinkedIn post.
-- **Comment / tag** on the announcement post so we can track your progress and help you better.
-
----
-
-## 📢 How to Participate
+## 📢 How to Practice
 
 1. **Fork** this repository and clone it.
 2. Each day, open that day's `README.md`, complete the tasks, and commit your code + notes to **your own repo**.
-3. Write a short **blog / LinkedIn / X post** documenting what you learned (screenshots, code snippets, `terraform plan` output).
-4. Use these hashtags on every post:
-
-   > **#TrainWithShubham #TerraWeekChallenge**
-
-5. Tag **[@Shubham Londhe](https://www.linkedin.com/in/shubhamlondhe1996/)** and share it with your network.
-6. On **Day 7 (18th July)**, submit your repo + posts via the [**submission form**](https://forms.gle/h5VmoLGbzWPZjPtf6) — see [Day 7](./day07/README.md) for the checklist.
+3. Keep short notes on what you learned (screenshots, code snippets, `terraform plan` output).
+4. *(Optional)* Share your progress on LinkedIn / X with **#TrainWithShubham #TerraWeekChallenge** and tag **[@Shubham Londhe](https://www.linkedin.com/in/shubhamlondhe1996/)**.
+5. On **Day 7 (17th October)**, go through the [wrap-up checklist](./day07/README.md) to review your week.
 
 ---
 

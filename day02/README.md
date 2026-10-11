@@ -1,6 +1,6 @@
 # 🧩 TerraWeek Day 2 — HCL Deep Dive: Variables, Types & Expressions
 
-**Date:** Monday, 13th July 2026
+**Date:** Monday, 12th October 2026
 
 Yesterday you ran your first `apply`. Today you'll learn the **language** behind it — **HCL (HashiCorp Configuration Language)** — so your configs become flexible, reusable, and readable. ✍️
 
@@ -92,9 +92,23 @@ Then try the same run using a **`terraform.tfvars`** file instead of `-var` flag
 
 ---
 
-## 📤 What to Submit
-- Blog / LinkedIn / X post: your `variables.tf`, a `terraform console` screenshot, and your running container/output.
-- Push to your GitHub repo. Tag **#TrainWithShubham #TerraWeekChallenge**.
+## 🗂️ Example Code from the Repos
+
+Study these real, up-to-date examples (Terraform ≥ 1.5, AWS provider `~> 6.0`) alongside today's tasks — read them, run them, then modify them:
+
+| Example | What it shows |
+|---|---|
+| [`variables.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/variables.tf) | Typed input variables with defaults |
+| [`outputs.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/outputs.tf) | Output values |
+| [`examples/validation.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/validation.tf) | 5 variable `validation` patterns |
+
+> 🧭 More Terraform repos: [github.com/LondheShubham153?q=terraform](https://github.com/LondheShubham153?tab=repositories&q=terraform)
+
+---
+
+## 📤 Wrap Up
+- Keep notes on: your `variables.tf`, a `terraform console` screenshot, and your running container/output.
+- Push to your GitHub repo. (Optional) Share with **#TrainWithShubham #TerraWeekChallenge**.
 
 ---
 
