@@ -17,6 +17,8 @@ By the end of today you should be able to:
 
 ---
 
+> 📄 **Quick reference:** keep the [Day 1 Cheat Sheet](./CHEATSHEET.md) open while you work.
+
 ## 📝 Tasks
 
 ### Task 1: Understand IaC & Terraform

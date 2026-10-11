@@ -1,4 +1,4 @@
-# 🗃️ Terraform State Cheat Sheet
+# 🗃️ Day 4 Cheat Sheet: State & Remote Backends
 
 A quick reference for the state commands and the S3 remote backend used in [Day 4](./README.md).
 
@@ -107,9 +107,31 @@ backend "s3" {
 
 ---
 
-## 🔗 More
+## 🔗 Docs
 
-- [Day 4 tasks](./README.md)
 - [S3 backend docs](https://developer.hashicorp.com/terraform/language/backend/s3)
 - [State docs](https://developer.hashicorp.com/terraform/language/state)
-- [`examples/import.tf`, `moved.tf`, `removed.tf`](https://github.com/LondheShubham153/terraform-for-devops/tree/main/examples) in the companion repo
+
+---
+
+## 🚀 Go Beyond This Sheet
+
+### 📦 Explore the big repo
+The companion repo [**terraform-for-devops**](https://github.com/LondheShubham153/terraform-for-devops) has real, current Terraform for this topic. Clone it and read the code, don't just skim it:
+- [`examples/import.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/import.tf)
+- [`examples/moved.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/moved.tf)
+- [`examples/removed.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/removed.tf)
+- [`examples/check.tf`](https://github.com/LondheShubham153/terraform-for-devops/blob/main/examples/check.tf)
+
+More repos: [github.com/LondheShubham153?q=terraform](https://github.com/LondheShubham153?tab=repositories&q=terraform)
+
+### 🧪 Practice on your own
+A cheat sheet only helps once you've typed the commands yourself. Try these without copy-pasting:
+- [ ] Create the state bucket, then migrate a local state to S3 and confirm the `.tflock` file appears during `apply`.
+- [ ] Use `terraform state list`, `show`, `mv` and `rm` on a throwaway config.
+- [ ] Import a bucket you created by hand using an `import` block.
+- [ ] Refactor a resource name with a `moved` block and check that `plan` shows no changes.
+
+> 💡 Break things on purpose, read the error, then fix it. That is how it sticks. Run `terraform destroy` when you're done.
+
+⬅️ Back to [Day 4 tasks](./README.md)

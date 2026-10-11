@@ -16,6 +16,8 @@ The finale! 🎉 Today you'll level up with **workspaces**, the native **`terraf
 
 ---
 
+> 📄 **Quick reference:** keep the [Day 6 Cheat Sheet](./CHEATSHEET.md) open while you work.
+
 ## 📝 Tasks
 
 ### Task 1: Workspaces & Environments

@@ -15,6 +15,8 @@ Yesterday you ran your first `apply`. Today you'll learn the **language** behind
 
 ---
 
+> 📄 **Quick reference:** keep the [Day 2 Cheat Sheet](./CHEATSHEET.md) open while you work.
+
 ## 📝 Tasks
 
 ### Task 1: Master HCL Syntax

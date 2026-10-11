@@ -16,6 +16,8 @@ Copy-pasting `.tf` blocks doesn't scale. **Modules** let you package infrastruct
 
 ---
 
+> 📄 **Quick reference:** keep the [Day 5 Cheat Sheet](./CHEATSHEET.md) open while you work.
+
 ## 📝 Tasks
 
 ### Task 1: Modules — the Why

@@ -50,6 +50,8 @@ Internet ──▶ [IGW] ──▶ [Route Table] ──▶ [ Public Subnet ] ─
 
 ---
 
+> 📄 **Quick reference:** keep the [Day 3 Cheat Sheet](./CHEATSHEET.md) open while you work.
+
 ## 📝 Tasks
 
 ### Task 1: Providers & Version Pinning

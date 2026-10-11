@@ -25,7 +25,7 @@ Terraform's **state** is the single most important concept for working on a **te
 
 ---
 
-> 📄 **Quick reference:** keep the [State Cheat Sheet](./STATE-CHEATSHEET.md) open while you work — state commands and the S3 backend snippet in one place.
+> 📄 **Quick reference:** keep the [Day 4 Cheat Sheet](./CHEATSHEET.md) open while you work — state commands and the S3 backend snippet in one place.
 
 ## 📝 Tasks
 
