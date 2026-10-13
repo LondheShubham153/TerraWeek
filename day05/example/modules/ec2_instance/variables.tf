@@ -4,9 +4,9 @@ variable "name" {
 }
 
 variable "instance_type" {
-  description = "EC2 instance type. t2.micro is AWS Free Tier in most regions."
+  description = "EC2 instance type. On newer (post-July 2025) AWS accounts, t3.micro is the free-tier-eligible type — t2.micro is no longer accepted on the Free Plan in most regions."
   type        = string
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 
 variable "environment" {

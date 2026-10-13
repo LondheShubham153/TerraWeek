@@ -19,7 +19,7 @@ data "aws_ami" "al2023" {
 module "web_server" {
   source                 = "./modules/ec2_instance"
   name                   = "web"
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
   environment            = "dev"
   ami                    = data.aws_ami.al2023.id
   subnet_id              = "subnet-0123456789abcdef0"
@@ -39,7 +39,7 @@ module "web_server" {
 | `ami`                    | AMI ID to launch (must start `ami-`)     | `string`       | —          |   yes    |
 | `subnet_id`              | Subnet to launch the instance in         | `string`       | —          |   yes    |
 | `vpc_security_group_ids` | Security group IDs to attach             | `list(string)` | —          |   yes    |
-| `instance_type`          | EC2 instance type (Free Tier: t2.micro)  | `string`       | `t2.micro` |    no    |
+| `instance_type`          | EC2 instance type (Free Tier: t3.micro on newer accounts) | `string` | `t3.micro` | no |
 | `environment`            | One of `dev` / `staging` / `prod`        | `string`       | `dev`      |    no    |
 | `tags`                   | Extra tags merged onto the instance      | `map(string)`  | `{}`       |    no    |
 

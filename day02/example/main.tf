@@ -1,3 +1,16 @@
+terraform {
+  required_version = ">= 1.14"
+
+  required_providers {
+    docker = {
+      source  = "kreuzwerker/docker"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "docker" {}
+
 # Locals: compute derived values once, reuse everywhere.
 locals {
   name_prefix = "tws-${var.environment}"
@@ -10,6 +23,12 @@ locals {
     },
     var.extra_labels,
   )
+
+  # Bonus: for expression — transform a list
+  upper_names = [for n in var.names : upper(n)]
+
+  # Bonus: conditional expression — pick memory based on environment
+  effective_memory_mb = var.environment == "prod" ? 512 : var.resource_profile.memory_mb
 }
 
 # Pull the Nginx image (tag driven by a variable).
